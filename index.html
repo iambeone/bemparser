@@ -7,13 +7,20 @@
 </head>
 <body>
     <div class="content">
-        <form method="POST">
-            Введите класс: <input type="text" id="classinput" />
-        </form>
-        <div id="result">
-
-        </div>
+      <section>
+        <h2>Проверка класса</h2>
+        <lable>Введите класс:</lable><input type="text" id="classinput" />
+        <div id="classresult"> </div>
+      </section>
+      <section>
+        <h2>Проверка кода</h2>
+        <lable>Введите код:</lable>
+        <textarea id="codeinput"></textarea>
+        <button id="codecheck">Проверить</button>
+        <div id="coderesult"> </div>
+      </section>
     </div>
-  <script src="script.js"></script>
+    <script src="https://unpkg.com/html-dom-parser@latest/dist/html-dom-parser.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
