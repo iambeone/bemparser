@@ -1,3 +1,33 @@
 body{
     padding: 10px;
+    font-family: 'Rubik';
+    font-size: 16px;
+}
+section{
+    padding: 20px;
+    background: #f9f9f9;
+}
+label{
+    display: block;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+h2{
+    text-transform: uppercase;
+}
+textarea{
+    width: 400px;
+    height: 600px;
+}
+.flex{
+    display: flex;
+}
+.row{
+    min-width: 400px;
+}
+.results{
+    padding: 10px 0;
+    font-size: 0.8rem;
+    line-height: 1rem;   
 }

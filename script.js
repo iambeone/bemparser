@@ -108,19 +108,19 @@ window.onload = () => {
         iterateDom(dom, [])
         let result = ''
         if(errors.ncp.length){
-            result += 'Ошибки, связанные с вложенностью блоков<br />'
+            result += '<b>Ошибки, связанные с вложенностью блоков</b>:<br />'
             errors.ncp.map(er => {
                 result += er + '<br />'
             })
         }
         if(errors.mod.length){
-            result += 'Ошибки, связанные с неправильным применением модификаторов<br />'
+            result += '<b>Ошибки, связанные с неправильным применением модификаторов</b>:<br />'
             errors.mod.map(er => {
                 result += er + '<br />'
             })
         }
         if(errors.npc.length){
-            result += 'Ошибки, связанные с неправильным применением блоков<br />'
+            result += '<b>Ошибки, связанные с неправильным применением блоков</b>:<br />'
             errors.npc.map(er => {
                 result += er + '<br />'
             })
