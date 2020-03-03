@@ -125,7 +125,7 @@ window.onload = () => {
                 result += er + '<br />'
             })
         }
-        document.getElementById('coderesult').innerHTML = result
+        document.getElementById('coderesult').innerHTML = result ? result: 'Ошибок не найдено'
 
     }
     

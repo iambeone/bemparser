@@ -20,6 +20,12 @@ textarea{
     width: 400px;
     height: 600px;
 }
+button{
+    display: block;
+    width: 100%;
+    border: 1px solid #f0f0f0;
+    padding: 10px;
+}
 .flex{
     display: flex;
 }
@@ -27,7 +33,7 @@ textarea{
     min-width: 400px;
 }
 .results{
-    padding: 10px 0;
+    padding: 20px 10px;
     font-size: 0.8rem;
     line-height: 1rem;   
 }
