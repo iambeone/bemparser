@@ -56,11 +56,12 @@ window.onload = () => {
         }
         document.getElementById('classresult').innerHTML = aggr_value
     }
-    const errors = {
+    const newErrors = () => ({
         ncp: [],
         mod: [],
         npc: []
-        }
+    })
+    let errors
     const checkBEMClass = (tagClass, parentClasses) => {
         let classes = tagClass.split(' ')
         // check if element is not containing parent classes
@@ -103,6 +104,7 @@ window.onload = () => {
         })
     }
     const htmlParser = () => {
+        errors = newErrors()
         const htmlCode = document.getElementById('codeinput').value
         const dom = window.HTMLDOMParser(htmlCode)
         iterateDom(dom, [])
